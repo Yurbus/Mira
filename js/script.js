@@ -78,6 +78,15 @@ $('.skills__item').each(function () {
     });
 });
 
+// Переключить язык
+
+const swichLang = document.querySelector('.head');
+const toggleList = document.querySelector('.toggle_list');
+
+swichLang.addEventListener("click", function(e) {
+    toggleList.classList.toggle('lang_active');
+});
+
 
 
 
