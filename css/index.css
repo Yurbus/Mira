@@ -718,7 +718,7 @@ body.lock {
   }
   .header__button-mobile {
     display: block;
-    margin-top: 1.875rem;
+    margin-top: 2.875rem;
   }
   .header__logo {
     width: 2.5rem;
@@ -843,7 +843,7 @@ body.lock {
   }
   .header__search-mobile {
     position: relative;
-    margin: 1.25rem auto 1.25rem auto;
+    margin: 3.25rem auto 1.25rem auto;
     height: 1.625rem;
     max-width: 18.75rem;
     min-width: 15rem;
