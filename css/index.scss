@@ -987,10 +987,20 @@ body.lock {
 
 /*-----------------------------------*/ 
   .footer__body {
-    grid-template-columns: 1fr;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .footer__col {
+    margin: 1.9375rem;
+  }
+  .logo-footer__col {
+    width: 100%;
+    a {
+      width: 150px;
+    }
   }
   .copyright {
-    margin-top: 1.125rem;
+    margin: 1.9375rem;
   }
 }
 
