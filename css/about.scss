@@ -67,14 +67,14 @@ body.lock {
 
 /*---------------------------*/
 [class*=__container] {
-  max-width: 108rem;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 0 .625rem;
 }
 
-@media screen and (max-width: 90rem) {
+@media screen and (max-width: 1441px) {
   [class*=__container] {
-    max-width: 73.125rem;
+    max-width: 1150px;
     margin: 0 auto;
     padding: 0 .625rem;
   }
@@ -327,11 +327,172 @@ body.lock {
   }
 }
 
+/*------- section__company -----------*/
 
+.section__company {
+  padding-top: 100px;
+}
+.company__body {
+  display: grid;
+  grid-template-columns: 37.5rem 1fr;
+  gap: 30px;
+  align-items: center;
+}
+.company__image {
+  img {
+    height: auto;
+    max-width: 560px;
+    object-fit: cover;
+    object-position: top;
+  }
+}
+.company__text {
+  h3 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 16px;
+  }
+  p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; 
+    margin-bottom: 15px;
+  }
+}
+.story-company__body {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  .story__title {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 18px;
+  }
+  .story__text {
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+  }
+  
+}
 
+/*------- section__miratel -----------*/
 
+.section__miratel {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.miratel__title {
+  text-align: center;
+}
+.miratel__body {
+  background: url('../img/about/miratel.png') center no-repeat;
+  height: 570px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+.miratel__list {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  li {
+    width: 300px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+   
+  }
+}
+.miratel__list-top {
+  margin-bottom: 500px;
+}
+.miratel__list-bottom {
+}
 
+/*------- section__description -----------*/
 
+.section__description {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.description__body {
+}
+.description__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
+.row__text {
+  p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+  }
+}
+.row__image {
+  img {
+    object-fit: cover;
+  }
+}
+.row__reverse {
+  margin-top: 60px;
+}
+
+/*------- section__quality -----------*/
+
+.section__quality {
+  margin-bottom: 50px;
+}
+.quality__title {
+  color: #DCDCDC;
+  // font-size: 78.5px;
+  font-size: calc(18px + 60 * (100vw / 1500));
+  white-space: nowrap;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 140%; /* 109.901px */
+  text-transform: uppercase;
+  text-align: center;
+}
+.quality__body {
+  text-align: center;
+}
+.quality__sub-title {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.quality__text {
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; 
+  max-width: 770px;
+  text-align: center;
+  margin: 15px auto;
+}
+.quality__link {
+  margin-top: 42px;
+  a {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
+    padding: 14px 64px;
+    border-radius: 32px;
+    background: #0062FF;
+    &:hover {
+      background: #0058e5;
+    }
+  }
+}
 
 
 /*----------------------------------------------------------------------------------------*/
@@ -440,7 +601,12 @@ body.lock {
 /*=========================================================================================*/
 /*=========================================================================================*/
 @media screen and (min-width: 1439.98px) {
-
+  .company__body {
+    grid-template-columns: 44.5rem 1fr;
+  }
+  .company__image img {
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width: 992.98px) {
@@ -449,7 +615,35 @@ body.lock {
   }
   .header__language {
     margin-right: 1.25rem;
-}
+  }
+  .section__company {
+    padding-top: 60px;
+  }
+  .company__body {
+    grid-template-columns: 27.5rem 1fr;
+    gap: 20px;
+  }
+  .company__text h3 {
+    font-size: 28px;
+  }
+  .company__text p {
+    font-size: 16px;
+  }
+  .story-company__body {
+    padding-top: 60px;
+    .story__title {
+      font-size: 32px;
+    }
+    .story__text {
+      font-size: 15px;
+    }
+  }
+
+  .quality__title {
+    color: #DCDCDC;
+    font-size: calc(18px + 60 * ((100vw - 320px) / 1500));
+  }
+
 }
 
 @media screen and (max-width: 959.98px) {
@@ -463,6 +657,11 @@ body.lock {
   .header__logo {
     width: 2.5rem;
   }
+  .row__text p {
+    font-size: 16px;
+  }
+
+
   /*-------- Mobile menu style ---------*/
   .menu__icon {
     display: block;
@@ -625,7 +824,28 @@ body.lock {
 
 }
 @media screen and (max-width: 767.98px) {
-  
+  .company__body {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .company__image img {
+    max-width: 100%;
+    height: 450px;
+    border-radius: 20px;
+  }
+  .section__description {
+    padding-top: 50px;
+  }
+  .row__text p {
+    font-size: 14px;
+  }
+  .quality__sub-title {
+    font-size: 20px;
+  }
+  .quality__text {
+    font-size: 14px;
+  }
+
 
 /*------------------------------------------*/ 
   .footer__body {
@@ -633,6 +853,38 @@ body.lock {
   }
 
 }
+@media screen and (max-width: 650.98px) {
+  .miratel__body {
+    background: none;
+    height: auto;
+  }
+  .miratel__list {
+    flex-direction: column;
+    li {
+      margin-bottom: 15px;
+      width: 100%;
+    }
+  }
+  .miratel__list-top {
+    margin-bottom: 0;
+  }
+  .description__row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .row__image {
+    order: 1;
+  }
+  .row__text {
+    order: 2;
+  }
+  .row__image img {
+    height: 300px;
+    border-radius: 15px;
+  }
+
+}
+
 @media screen and (max-width: 559.98px) {
   
 
@@ -659,7 +911,25 @@ body.lock {
   .menu__icon {
     top: 1.625rem;
   }
-  
+  .company__image img {
+    height: 280px;
+  }
+  .story-company__body {
+    padding-top: 30px;
+  }
+  .story-company__body {
+    padding-bottom: 10px;
+  }
+  .section__description {
+    padding-top: 20px;
+  }
+  .row__image img {
+    height: 220px;
+  }
+  .quality__sub-title {
+    font-size: 17px;
+  }
+
 
 /*-----------------------------------*/ 
   .footer__body {
