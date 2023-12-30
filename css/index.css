@@ -271,7 +271,7 @@ body.lock {
 /*------------ main__section style ------------*/
 .main__section {
   position: relative;
-  min-height: 100vh;
+  min-height: 800px;
   display: flex;
 }
 

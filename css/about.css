@@ -505,6 +505,23 @@ body.lock {
   background: #0058e5;
 }
 
+/*------------ section__partners ------------*/
+.section__partners {
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.partners__logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.partners__logo img {
+  max-width: 190px;
+  margin: 15px;
+}
+
 /*----------------------------------------------------------------------------------------*/
 /*------------ Footer style --------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------*/
@@ -916,6 +933,10 @@ body.lock {
   }
   .quality__sub-title {
     font-size: 17px;
+  }
+  .partners__logo {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
   }
   /*-----------------------------------*/
   .footer__body {
