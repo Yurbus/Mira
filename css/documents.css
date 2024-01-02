@@ -112,13 +112,6 @@ body.lock {
   background-color: #fcfcfc;
 }
 
-/*--------- buttons style ------------*/
-button {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
 /*---------------------------------------------------------------------------------------*/
 /*------------ Buttons style -------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------*/
@@ -337,204 +330,6 @@ button {
   left: 0;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.service_home_bg {
-  display: none;
-}
-
-/*-------------- section__type --------------------*/
-.section__type {
-  margin-top: 80px;
-}
-
-.type__body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.type__title {
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-align: center;
-  margin-bottom: 32px;
-}
-
-.type__buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  margin-bottom: 90px;
-}
-.type__buttons .tab {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  padding: 26px 44px 26px 88px;
-  background-color: #ffffff;
-  border-radius: 6px;
-  box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
-  width: 265px;
-  z-index: 2;
-}
-.type__buttons .tab .tab_icon {
-  margin-right: 20px;
-  pointer-events: none;
-  position: absolute;
-  z-index: 1;
-  left: 44px;
-}
-.type__buttons .tab:hover {
-  background-color: #0062FF;
-  color: #fff;
-}
-.type__buttons .tab:hover .tab_icon svg path {
-  fill: #fff;
-}
-.type__buttons .tab.active {
-  background-color: #0062FF;
-  color: #fff;
-}
-.type__buttons .tab.active .tab_icon svg path {
-  fill: #fff;
-}
-
-.tab-panel {
-  display: none;
-}
-
-.tab-panel.active {
-  display: grid;
-}
-
-.tab__home {
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px;
-  margin-bottom: 50px;
-}
-.tab__home .home__coll {
-  position: relative;
-  border-radius: 0px 0px 12px 12px;
-  box-shadow: 0px 10px 24px 0px rgba(0, 0, 0, 0.07);
-}
-.tab__home .home__coll:hover {
-  background: #0062FF;
-}
-.tab__home .home__coll:hover .wrap__text h3, .tab__home .home__coll:hover .wrap__text p {
-  color: #fff;
-}
-.tab__home .home__coll .home__text {
-  padding: 18px 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-.tab__home .home__coll .home__text .wrap__text {
-  padding-bottom: 30px;
-}
-.tab__home .home__coll .home__text .wrap__text h3 {
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-  margin-bottom: 12px;
-}
-.tab__home .home__coll .home__text .wrap__text p {
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 140%;
-  padding-bottom: 40px;
-}
-.tab__home .home__coll .home__text a {
-  position: absolute;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-  padding: 10px 32px;
-  color: #000;
-  display: inline-flex;
-  justify-content: center;
-  border-radius: 30px;
-  border: 1px solid #000;
-  width: 150px;
-  bottom: 30px;
-}
-.tab__home .home__coll:hover a {
-  color: #fff;
-  border: 1px solid #fff;
-}
-
-.tab__business {
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  margin-bottom: 50px;
-}
-.tab__business .home__coll {
-  position: relative;
-  border-radius: 0px 0px 12px 12px;
-  box-shadow: 0px 10px 24px 0px rgba(0, 0, 0, 0.07);
-}
-.tab__business .home__coll:hover {
-  background: #0062FF;
-}
-.tab__business .home__coll:hover .wrap__text h3, .tab__business .home__coll:hover .wrap__text p {
-  color: #fff;
-}
-.tab__business .home__coll .home__text {
-  padding: 18px 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-.tab__business .home__coll .home__text .wrap__text {
-  padding-bottom: 30px;
-  width: 100%;
-}
-.tab__business .home__coll .home__text .wrap__text h3 {
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-  margin-bottom: 12px;
-}
-.tab__business .home__coll .home__text .wrap__text p {
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 140%;
-  padding-bottom: 40px;
-}
-.tab__business .home__coll .home__text a {
-  position: absolute;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-  padding: 10px 32px;
-  color: #000;
-  display: inline-flex;
-  justify-content: center;
-  border-radius: 30px;
-  border: 1px solid #000;
-  width: 150px;
-  bottom: 30px;
-}
-.tab__business .home__coll:hover a {
-  color: #fff;
-  border: 1px solid #fff;
 }
 
 /*----------------------------------------------------------------------------------------*/
@@ -819,38 +614,12 @@ button {
   }
 }
 @media screen and (max-width: 767.98px) {
-  .tab__home {
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-  }
-  .type__buttons {
-    gap: 15px;
-    margin-bottom: 50px;
-  }
   /*------------------------------------------*/
   .footer__body {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 @media screen and (max-width: 559.98px) {
-  .type__buttons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .tab__home {
-    grid-template-columns: 1fr;
-  }
-  .home__image img {
-    height: 200px;
-    -o-object-fit: cover;
-       object-fit: cover;
-    border-radius: 15px 15px 0 0;
-  }
-  .tab__business {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
   /*------------------------------------------*/
   .footer__body {
     grid-template-columns: repeat(3, 1fr);
@@ -887,4 +656,4 @@ button {
     margin: 1.9375rem;
   }
 }
-/*# sourceMappingURL=service.css.map */
+/*# sourceMappingURL=documents.css.map */

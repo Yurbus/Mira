@@ -349,10 +349,12 @@ button {
 }
 .type__buttons {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 30px;
   margin-bottom: 90px;
-  .for__home {
+  .tab {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -360,52 +362,45 @@ button {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    padding: 12px 44px;
+    padding: 26px 44px 26px 88px;
     background-color: #ffffff;
     border-radius: 6px;
     box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
     width: 265px;
-    .icon_home {
+    z-index: 2;
+    .tab_icon {
       margin-right: 20px;
-    }
-    &:hover, &:active {
-      background-color: #0062FF;
-      color: #fff;
-      .icon_home svg path {
-        fill: #fff;
-      }
-    }
-  }
-  .for__bussines {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    padding: 12px 44px;
-    background-color: #ffffff;
-    border-radius: 6px;
-    box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
-    width: 265px;
-    .icon_business {
-      margin-right: 20px;
-    }
-    &:hover, &:active {
-      background-color: #0062FF;
-      color: #fff;
-      .icon_business svg path {
-        fill: #fff;
-      }
+      pointer-events: none;
+      position: absolute;
+      z-index: 1;
+      left: 44px;
     }
   }
   
+  .tab:hover{
+    background-color: #0062FF;
+    color: #fff;
+    .tab_icon svg path {
+      fill: #fff;
+    }
+  }
+  .tab.active {
+    background-color: #0062FF;
+    color: #fff;
+    .tab_icon svg path {
+      fill: #fff;
+    }
+  }
+
+}
+.tab-panel {
+    display: none;
+}
+.tab-panel.active {
+    display: grid;
 }
 
-
 .tab__home {
-  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
   margin-bottom: 50px;
@@ -468,8 +463,9 @@ button {
   }
 }
 
-.tab__business {
-  display: grid;
+
+
+.tab__business{
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   margin-bottom: 50px;
@@ -532,7 +528,6 @@ button {
     border: 1px solid #fff;
   }
 }
-
 
 
 
@@ -829,7 +824,14 @@ button {
 
 }
 @media screen and (max-width: 767.98px) {
-  
+  .tab__home {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  .type__buttons {
+    gap: 15px;
+    margin-bottom: 50px;
+  }
 
 /*------------------------------------------*/ 
   .footer__body {
@@ -838,8 +840,23 @@ button {
 
 }
 @media screen and (max-width: 559.98px) {
-  
-
+  .type__buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .tab__home {
+    grid-template-columns: 1fr;
+  }
+  .home__image img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+  }
+  .tab__business {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
 
   /*------------------------------------------*/ 
   .footer__body {
