@@ -343,7 +343,7 @@ body.lock {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 78px 0;
+  padding: 78px 15px;
   border-radius: 12px;
 }
 .sale__body .sale__title {
