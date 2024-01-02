@@ -394,13 +394,17 @@ button {
   }
 
 }
+
 .tab-panel {
     display: none;
+    // opacity: 0;
+    // visibility: hidden;
 }
 .tab-panel.active {
     display: grid;
+    // visibility: visible;
+    // opacity: 1;
 }
-
 .tab__home {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
@@ -470,6 +474,7 @@ button {
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   margin-bottom: 50px;
+  transition: all 0.2s ease 0s;
   .home__coll {
     position: relative;
     border-radius: 0px 0px 12px 12px;

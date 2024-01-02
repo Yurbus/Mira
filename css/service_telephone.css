@@ -332,6 +332,188 @@ body.lock {
      object-fit: cover;
 }
 
+/*--------- section__sale ----------------------*/
+.section__sale {
+  margin: 70px 0;
+}
+
+.sale__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 78px 0;
+  border-radius: 12px;
+}
+.sale__body .sale__title {
+  color: #FFF;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.sale__body .sale__text {
+  color: #FFF;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 28.8px */
+  max-width: 720px;
+}
+.sale__body .sale__button {
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-top: 40px;
+  padding: 14px 64px;
+  border-radius: 32px;
+  background: #0062FF;
+}
+.sale__body .sale__button:hover {
+  background: #0059e9;
+}
+
+/*------- section__connect -----------*/
+.section__connect {
+  margin: 100px 0 60px;
+}
+
+.connect__body {
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.connect__image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.connect__content .content__title {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+.connect__content .content__text ul li {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 25.2px */
+}
+.connect__content .content__btn {
+  margin: 40px 0 20px;
+}
+.connect__content .content__btn a {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  padding: 14px 64px;
+  border-radius: 32px;
+  background: #0062FF;
+}
+.connect__content .content__btn a:hover {
+  background: #005aea;
+}
+
+/*------- section__callUs -----------*/
+.section__callUs {
+  padding-bottom: 100px;
+  padding-top: 50px;
+}
+
+.callUs__body {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.form__callUs h4 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 13px;
+}
+.form__callUs span {
+  display: block;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+
+.input__group {
+  display: flex;
+  flex-direction: column;
+  max-width: 418px;
+  margin-bottom: 29px;
+}
+.input__group label {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 13px;
+}
+.input__group input {
+  border-radius: 24px;
+  background: #F2F2F2;
+  height: 58px;
+  border: none;
+  padding: 15px;
+}
+
+.call__button {
+  border: none;
+  border-radius: 32px;
+  background: #0062FF;
+  padding: 14px 64px;
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  cursor: pointer;
+}
+.call__button:hover {
+  background: #0057e4;
+}
+
+.callUs__phones .phones__title {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.callUs__phones .phones__list {
+  margin-top: 64px;
+}
+.callUs__phones .phones__list .phones_link a {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #000;
+}
+.callUs__phones .phones__list .phones_link:nth-child(2n) {
+  margin-bottom: 48px;
+}
+.callUs__phones .phones__list .link__mini {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+}
+
 /*----------------------------------------------------------------------------------------*/
 /*------------ Footer style --------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------*/
@@ -614,9 +796,39 @@ body.lock {
   }
 }
 @media screen and (max-width: 767.98px) {
+  .connect__body {
+    grid-template-columns: 1fr;
+  }
+  .connect__image img {
+    height: 300px;
+    border-radius: 15px;
+  }
+  .advantages__columns {
+    gap: 15px;
+  }
+  .form__callUs h4 {
+    font-size: 24px;
+  }
+  .callUs__phones .phones__title {
+    font-size: 24px;
+  }
+  .callUs__phones .phones__list {
+    margin-top: 30px;
+  }
+  .callUs__phones .phones__list .phones_link:nth-child(2n) {
+    margin-bottom: 20px;
+  }
   /*------------------------------------------*/
   .footer__body {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 679.98px) {
+  .callUs__body {
+    flex-wrap: wrap;
+  }
+  .callUs__phones {
+    margin-top: 30px;
   }
 }
 @media screen and (max-width: 559.98px) {

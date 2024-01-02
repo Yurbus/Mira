@@ -481,6 +481,7 @@ button {
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   margin-bottom: 50px;
+  transition: all 0.2s ease 0s;
 }
 .tab__business .home__coll {
   position: relative;
