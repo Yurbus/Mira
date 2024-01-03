@@ -231,9 +231,15 @@ body.lock {
   opacity: 0;
   visibility: hidden;
   transition: all 0.2s ease 0s;
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1294117647);
 }
 .header__language .toggle_list li {
   width: 1.5rem;
+}
+.header__language .toggle_list li:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .toggle_list.lang_active {
