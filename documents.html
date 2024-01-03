@@ -9,6 +9,7 @@
     <!-- <link rel="icon" type="image/x-icon" href="img/favicon.png"> -->
     <link rel="stylesheet" href="css/documents.css">
     <link rel="stylesheet" href="css/popups.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -102,17 +103,29 @@
                     </div>
                 </div>
                 <div class="main__bg">
-                    <img src="img/service/service_bg.jpg" alt="BG">
+                    <img src="img/documents/doc_bg.jpg" alt="BG">
                 </div>
             </section>
             <!-- ///////////////////////////////////////////////////////////////////////////////////////////// -->
-            <section class="">
-            
+            <section class="section__doc">
+                <div class="doc__container">
+                    <div class="doc__body">
+                        <div class="doc__image">
+                            <a href="img/documents/1_1.jpg"><img src="img/documents/1_1.jpg" alt="photo"></a>
+                            <a href="img/documents/1_2.jpg"><img src="img/documents/1_2.jpg" alt="photo"></a>
+                            <a href="img/documents/1_3.jpg"><img src="img/documents/1_3.jpg" alt="photo"></a>
+                            <a href="img/documents/1_4.jpg"><img src="img/documents/1_4.jpg" alt="photo"></a>
+                            <a href="img/documents/1_5.jpg"><img src="img/documents/1_5.jpg" alt="photo"></a>
+                            <a href="img/documents/1_6.jpg"><img src="img/documents/1_6.jpg" alt="photo"></a>
+                            <a href="img/documents/1_7.jpg"><img src="img/documents/1_7.jpg" alt="photo"></a>
+                            <a href="img/documents/1_8.jpg"><img src="img/documents/1_8.jpg" alt="photo"></a>
+                            <a href="img/documents/1_9.jpg"><img src="img/documents/1_9.jpg" alt="photo"></a>
+                            <a href="img/documents/1_10.jpg"><img src="img/documents/1_10.jpg" alt="photo"></a>
+                        </div>
+                    </div>
+                </div>
             </section>
-             <!-- ///////////////////////////////////////////////////////////////////////////////////////////// -->
-    
         </main>
-
         <footer class="footer">
             <div class="footer__container">
                 <div class="footer__body">
@@ -187,15 +200,22 @@
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
-    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js">
     </script>
     <script src="js/aos.js"></script>
     <script src="js/script.js"></script>
     <script src="js/popups.js"></script>
     <script src="js/slick.js"></script>
     <script src="js/slider.js"></script>
-
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script>
+        $(".doc__image").magnificPopup({
+            delegate: "a",
+                type : 'image',
+                gallery : {
+                enabled : true
+            }
+            });
+    </script>
 </body>
 </html>
