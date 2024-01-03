@@ -871,6 +871,9 @@ button {
   .menu__icon {
     top: 1.625rem;
   }
+  .main__title {
+    font-size: 32px;
+  }
   /*-----------------------------------*/
   .footer__body {
     display: flex;

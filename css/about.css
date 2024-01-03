@@ -916,6 +916,12 @@ body.lock {
   .menu__icon {
     top: 1.625rem;
   }
+  .main__title {
+    font-size: 32px;
+  }
+  .main__text {
+    font-size: 16px;
+  }
   .company__image img {
     height: 280px;
   }

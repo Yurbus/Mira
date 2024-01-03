@@ -805,9 +805,25 @@ body.lock {
   .menu__icon {
     top: 1.625rem;
   }
+  .main__title {
+    font-size: 32px;
+  }
   .callUs__form h4 {
     font-size: 28px;
   }
+  .address__list .address__link a {
+    font-size: 30px;
+  }
+  .address__list .link__mini {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .address__list .link__city, .address__list .link__mail {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+
 
 /*-----------------------------------*/ 
   .footer__body {
