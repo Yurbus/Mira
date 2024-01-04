@@ -398,7 +398,7 @@ body.lock {
   text-align: left;
 }
 
-.card button {
+.card a {
   border-radius: 50px;
   border: 1px solid #0062FF;
   background: #0062FF;
@@ -410,7 +410,7 @@ body.lock {
   max-width: 160px;
 }
 
-.card button:hover {
+.card a:hover {
   background-color: #0059e7;
 }
 

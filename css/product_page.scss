@@ -285,120 +285,40 @@ body.lock {
 /*------------ Main style ---------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------*/
 
-/*------------ main__section style ------------*/
-.main__section {
-	position: relative;
-	min-height: 502px;
-	display: flex;
-}
-.main__container {
-	position: relative;
-	z-index: 2;
-	min-height: 100%;
-	flex: 1 1 auto;
-	display: flex;
-	align-items: center;
-}
-.main__body {
-  width: 100%;
-  position: relative;
-}
-.main__title {
-  color: #FFF;
-  font-family: 'Conthrax';
-  font-size: 48px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-/*------- style for background -----------*/
-.main__bg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  img {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	object-fit: cover;
-  }
-}
 
 /*------- section_product -----------*/
 .section_product {
-  margin-top: 100px;
+  margin-top: 140px;
   margin-bottom: 100px;
 }
 .product__body {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 20px;
-}
-.card-content {
-  display: flex;
-  flex-direction: column;
-  height: 100%; /* Занимаем высоту родительского блока (.card) */
-  align-items: center;
-  width: 100%;
-}
-.card {
-  position: relative;
-  margin-bottom: 20px;
-  padding: 18px;
-  border-radius: 12px;
-  background: #FFF;
-  box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.05);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.card img {
-  max-width: 186px;
-  height: auto;
+  .back__link {
+    display: flex;
+    align-items: center;
+    .product_link {
+      display: flex;
+      align-items: center;
+      color: #0062FF;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: normal;
+      svg {
+        margin-right: 10px;
+      }
+      &:hover {
+        color: #000;
+        svg path {
+          stroke: #000;
+        }
+      }
+    }
+  }
 }
 
-.card h3 {
-  margin-top: 10px;
-  margin-bottom: 20px;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  text-align: left;
-  display: block;
-  width: 100%;
-}
-.card p {
-  margin-bottom: 20px;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  display: block;
-  width: 100%;
-  text-align: left;
-}
 
-.card a {
-  border-radius: 50px;
-  border: 1px solid #0062FF;
-  background: #0062FF;
-  color: white;
-  padding: 10px 44px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-top: auto;
-  max-width: 160px;
-}
 
-.card a:hover {
-  background-color: #0059e7;
-}
+
 
 
 
