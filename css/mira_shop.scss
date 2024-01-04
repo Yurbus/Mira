@@ -328,9 +328,77 @@ body.lock {
   }
 }
 
+/*------- section_product -----------*/
+.section_product {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.product__body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Занимаем высоту родительского блока (.card) */
+  align-items: center;
+  width: 100%;
+}
+.card {
+  position: relative;
+  margin-bottom: 20px;
+  padding: 18px;
+  border-radius: 12px;
+  background: #FFF;
+  box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.card img {
+  max-width: 186px;
+  height: auto;
+}
 
+.card h3 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: left;
+  display: block;
+  width: 100%;
+}
+.card p {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: block;
+  width: 100%;
+  text-align: left;
+}
 
+.card button {
+  border-radius: 50px;
+  border: 1px solid #0062FF;
+  background: #0062FF;
+  color: white;
+  padding: 10px 44px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: auto;
+  max-width: 160px;
+}
+
+.card button:hover {
+  background-color: #0059e7;
+}
 
 
 
@@ -623,7 +691,9 @@ body.lock {
   }
 }
 @media screen and (max-width: 859.98px) {
-
+  .product__body {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 @media screen and (max-width: 767.98px) {
   
@@ -634,6 +704,13 @@ body.lock {
   }
 
 }
+@media screen and (max-width: 659.98px) {
+  .product__body {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
 @media screen and (max-width: 559.98px) {
   
 
@@ -663,6 +740,11 @@ body.lock {
   .main__title {
     font-size: 32px;
   }
+  .product__body {
+    grid-template-columns: 1fr;
+  }
+
+
 
 /*-----------------------------------*/ 
   .footer__body {
