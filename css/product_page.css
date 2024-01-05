@@ -300,6 +300,7 @@ body.lock {
 .product__body .back__link {
   display: flex;
   align-items: center;
+  margin-bottom: 30px;
 }
 .product__body .back__link .product_link {
   display: flex;
