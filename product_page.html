@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/product_page.css">
     <link rel="stylesheet" href="css/popups.css">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/> -->
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/fonts.css">
@@ -66,9 +67,9 @@
                             <li class="desktop-menu__link"><a class="menu__link menu__link-active" href="">Магазин</a></li>
                             <li class="desktop-menu__link"><a class="menu__link" href="service.html">Послуги</a></li>
                             <li class="desktop-menu__link"><a class="menu__link" href="about.html">Про нас</a></li>
-                            <li class="desktop-menu__link"><a class="menu__link" href="">Для дому</a></li>
-                            <li class="desktop-menu__link"><a class="menu__link" href="">Для бізнесу</a></li>
-                            <li class="desktop-menu__link"><a class="menu__link" href="">Контакти</a></li>          
+                            <li class="desktop-menu__link"><a class="menu__link" href="service.html">Для дому</a></li>
+                            <li class="desktop-menu__link"><a class="menu__link" href="service.html">Для бізнесу</a></li>
+                            <li class="desktop-menu__link"><a class="menu__link" href="contacts.html">Контакти</a></li>          
                         </ul>
                     </div>
 
@@ -105,6 +106,61 @@
                                 </svg>
                                 До магазину
                             </a>
+                        </div>
+
+                        <div class="product__cart">
+                            <div class="cart__image">
+                                <swiper-container style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="mySwiper"
+                                    thumbs-swiper=".mySwiper2" space-between="10" navigation="true">
+                                    <swiper-slide>
+                                        <img src="img/product/product_1.png" />
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <img src="img/product/product_1-mini.png" />
+                                    </swiper-slide>
+                                </swiper-container>
+                                <swiper-container class="mySwiper2" space-between="10" slides-per-view="4" free-mode="true"
+                                    watch-slides-progress="true">
+                                    <swiper-slide>
+                                        <img src="img/product/product_1.png" />
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <img src="img/product/product_1-mini.png" />
+                                    </swiper-slide>
+                                </swiper-container>
+                            </div>
+
+                            <div class="cart__info">
+                                <h2 class="cart__title">Маршрутизатор MikroTik hAP (RB951Ui-2nD)</h2>
+                                <div class="id_product">ID: 325341</div>
+                                <div class="price_product">1 719 ₴</div>
+                                <div class="cart__description">
+                                    <p>Маршрутизатор MikroTik hAP — компактний пристрій, який стане ідеальним рішенням для 
+                                        квартири або невеликого офісу, оскільки з невеликою потужністю в 160 міліватів, 
+                                        сигнал проходить через 2-3 стіни з бетону (певна річ, залежно від товщини), і 
+                                        пристрій цілком може покрити стабільним сигналом 3 або 4 кімнати. Виріб допоможе в 
+                                        створенні бездротової мережі з роумінгом. З цим маршрутизатором ви та ваші клієнти 
+                                        зможуть без обриву з'єднання користуватися мережею, переходячи з кімнати в кімнату, 
+                                        оскільки перемикання між пристроями відбувається в цілком автоматичному режимі.
+                                        hAP (RB951Ui-2nD) обладнаний високопродуктивним процесором Atheros QCA9531 650 МГц і 
+                                        передовою системою RouterOS level 4, розроблений компанією MikroTik.
+                                    </p>
+                                    <h3>Особливості:</h3>
+                                    <ul class="cart__list">
+                                        <li>Маршрутизатор маленького розміру, буде мати добрий вигляд в будь-якому місці будинку або 
+                                            офісу, анкерні отвори під настінний монтаж передбачені, встановити можна практично в 
+                                            будь-якому положенні.</li>
+                                        <li>У моделі є USB 2.0 порт, підтримує широкий модельний ряд USB-модемів.</li>
+                                        <li>Завдяки вбудованій ліцензії Router OS Level 4, може підтримувати роботу до 200 користувачів 
+                                            хотспота та користувачів, під'єднаних через тунельні протоколи</li>
+                                        <li>Процесор високої потужності.</li>
+                                        <li>Обладнаний двома внутрішніми антенами Wi-Fi, підтримує стандарт 802.11n, радіомодуль працює 
+                                            на частоті 2,4 ГГц.</li>
+                                        <li>Роздавання PoЕ-живлення на 5-му порту пристрою.</li>
+                                        <li>Підтримка WPS кнопкою.</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -186,15 +242,15 @@
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
-    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js">
     </script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/script.js"></script>
     <script src="js/popups.js"></script>
-    <script src="js/slick.js"></script>
-    <script src="js/slider.js"></script>
+    <!-- <script src="js/slick.js"></script> -->
+    <!-- <script src="js/sw_slider.js"></script> -->
 
 </body>
 </html>
