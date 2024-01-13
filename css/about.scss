@@ -882,11 +882,12 @@ body.lock {
 }
 @media screen and (max-width: 650.98px) {
   .miratel__body {
-    background: none;
+    padding-top: 370px;
     height: auto;
   }
   .miratel__list {
     flex-direction: column;
+    transform: translateY(80px);
     li {
       margin-bottom: 15px;
       width: 100%;
@@ -894,6 +895,9 @@ body.lock {
   }
   .miratel__list-top {
     margin-bottom: 0;
+  }
+  .miratel__list-bottom {
+    margin-bottom: 50px;
   }
   .description__row {
     grid-template-columns: 1fr;

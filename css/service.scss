@@ -417,7 +417,7 @@ button {
   margin-bottom: 50px;
   .home__coll {
     position: relative;
-    border-radius: 0px 0px 12px 12px;
+    border-radius: 12px;
     box-shadow: 0px 10px 24px 0px rgba(0, 0, 0, 0.07);
     &:hover {
       background: #0062FF;
@@ -426,6 +426,11 @@ button {
       }
     }
     .home__image {
+      img {
+        max-height: 276px;
+        border-radius: 11px 11px 0 0;
+        object-fit: cover;
+      }
     }
     .home__text {
       padding: 18px 24px;
@@ -483,7 +488,7 @@ button {
   transition: all 0.2s ease 0s;
   .home__coll {
     position: relative;
-    border-radius: 0px 0px 12px 12px;
+    border-radius: 12px;
     box-shadow: 0px 10px 24px 0px rgba(0, 0, 0, 0.07);
     &:hover {
       background: #0062FF;
@@ -492,6 +497,11 @@ button {
       }
     }
     .home__image {
+      img {
+        max-height: 350px;
+        border-radius: 12px 12px 0 0;
+        object-fit: cover;
+      }
     }
     .home__text {
       padding: 18px 24px;
