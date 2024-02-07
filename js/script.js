@@ -27,9 +27,9 @@ const isMobile = {
 };
 
 // Animation
-AOS.init({
-    duration: 1200,
-})
+// AOS.init({
+//     duration: 1200,
+// })
 
 // Меню бурнер
 const iconMenu = document.querySelector('.menu__icon');
@@ -106,7 +106,7 @@ swichLang.addEventListener("click", function(e) {
         el.addEventListener('click', selectPanel)
     })
     
-    }()
+}
 
 
 

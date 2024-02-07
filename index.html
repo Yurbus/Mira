@@ -7,9 +7,10 @@
     <title>Мірател - телекомунікаційна компанія</title>
 
     <!-- <link rel="icon" type="image/x-icon" href="img/favicon.png"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/popups.css">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/fonts.css">
@@ -207,12 +208,8 @@
                         <div class="payment__form-wrap">
                             <form action="" class="pay__form">
                                 <h3 class="payment__title">Онлайн оплата</h3>
-                                <div class="input__group">
-                                    <label for="pay_input">Введіть ваш рахунок:</label>
-                                    <input id="pay_input" type="text" name="number">
-                                </div>
                                 <div class="btn__group">
-                                    <button type="submit" class="btn_submit">Сплатити</button>
+                                    <a href="" class="btn_submit">Сплатити</a>
                                     <img src="img/easepay.svg" alt="">
                                 </div>
                             </form>
@@ -228,7 +225,7 @@
                 <div class="partners__container">
                     <div class="partners__body">
                         <h2 class="partners__title title__h2">Партнери</h2>
-                        <div class="partners__logo">
+                        <!-- <div class="partners__logo">
                             <img src="img/partners/41c515be-7f6f-479e-a1b8-846b29137dac.png" alt="logo">
                             <img src="img/partners/div.our-partners__slide.png" alt="logo">
                             <img src="img/partners/US-Bank-scaled.png" alt="logo">
@@ -236,7 +233,39 @@
                             <img src="img/partners/div.our-partners__slide4.png" alt="logo">
                             <img src="img/partners/shop_vac_logo_NEW_2.png" alt="logo">
                             <img src="img/partners/our-partners__slide.png" alt="logo">
+                        </div> -->
+                        <!-- Swiper -->
+                        <div class="swiper h-partners__slider mainSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="img/partners_logo/image_1.png" alt="logo"></div>
+                                <div class="swiper-slide"><img src="img/partners_logo/image_2.png" alt="logo"></div>
+                                <div class="swiper-slide"><img src="img/partners_logo/image_3.png" alt="logo"></div>
+                                <div class="swiper-slide"><img src="img/partners_logo/image_4.png" alt="logo"></div>
+                                <div class="swiper-slide"><img src="img/partners_logo/image_5.png" alt="logo"></div>
+                                <div class="swiper-slide"><img src="img/partners_logo/image_6.png" alt="logo"></div>
+                                <div class="swiper-slide"><img src="img/partners_logo/image_7.png" alt="logo"></div>
+                                <div class="swiper-slide"><img src="img/partners_logo/image_8.png" alt="logo"></div>
+                                <div class="swiper-slide"><img src="img/partners_logo/image_9.png" alt="logo"></div>
+                                <div class="swiper-slide"><img src="img/partners_logo/image_10.png" alt="logo"></div>
+                                <div class="swiper-slide"><img src="img/partners_logo/image_11.png" alt="logo"></div>
+                                <div class="swiper-slide"><img src="img/partners_logo/image_12.png" alt="logo"></div>
+                                <div class="swiper-slide"><img src="img/partners_logo/image_13.png" alt="logo"></div>
+                                <div class="swiper-slide"><img src="img/partners_logo/image_14.png" alt="logo"></div>
+                                <div class="swiper-slide"><img src="img/partners_logo/image_15.png" alt="logo"></div>
+                                <div class="swiper-slide"><img src="img/partners_logo/image_16.png" alt="logo"></div>
+                                <div class="swiper-slide"><img src="img/partners_logo/image_17.png" alt="logo"></div>
+                                <div class="swiper-slide"><img src="img/partners_logo/image_18.png" alt="logo"></div>
+                                <div class="swiper-slide"><img src="img/partners_logo/image_19.png" alt="logo"></div>
+                                <div class="swiper-slide"><img src="img/partners_logo/image_20.png" alt="logo"></div>
+                                <div class="swiper-slide"><img src="img/partners_logo/image_21.png" alt="logo"></div>
+                                <div class="swiper-slide"><img src="img/partners_logo/image_22.png" alt="logo"></div>
+                                <div class="swiper-slide"><img src="img/partners_logo/image_23.png" alt="logo"></div>
+                                <div class="swiper-slide"><img src="img/partners_logo/image_24.png" alt="logo"></div>
+                                <div class="swiper-slide"><img src="img/partners_logo/image_25.png" alt="logo"></div>
+                            </div>
+                            <div class="swiper-scrollbar"></div>
                         </div>
+
                     </div>
                 </div>
             </section>
@@ -318,15 +347,60 @@
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
-    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer">
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script src="js/aos.js"></script>
     <script src="js/script.js"></script>
     <script src="js/popups.js"></script>
-    <script src="js/slick.js"></script>
-    <script src="js/slider.js"></script>
+    
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
 
+            var swiper = new Swiper(".mainSwiper", {
+            slidesPerView: 5,
+            grid: {
+                    rows: 2,
+                },
+                autoplay: {
+                    delay: 3000,
+                },
+                spaceBetween: 30,
+                scrollbar: {
+                    el: ".swiper-scrollbar",
+                    hide: true,
+                },
+                breakpoints: {
+                    // when window width is >= 320px
+                    360: {
+                        slidesPerView: 2, 
+                        grid: {
+                            rows: 2,
+                        }       
+                    },
+                    // when window width is >= 480px
+                    480: {
+                        slidesPerView: 3,
+                        grid: {
+                            rows: 2,
+                        }
+                    },
+                    // when window width is >= 640px
+                    640: {
+                        slidesPerView: 4,
+                        grid: {
+                            rows: 2,
+                        }
+                    },
+                    768: {
+                        slidesPerView: 5,
+                        grid: {
+                            rows: 2,
+                        }
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 </html>
