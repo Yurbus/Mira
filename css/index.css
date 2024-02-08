@@ -921,6 +921,15 @@ body.lock {
     flex-direction: column;
     align-items: center;
   }
+  .main__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .main__phones {
+    align-items: center;
+  }
   .main__btns {
     display: flex;
     justify-content: center;
