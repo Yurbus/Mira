@@ -594,7 +594,8 @@ body.lock {
 }
 
 .h-partners__slider {
-  height: 400px;
+  height: 380px;
+  padding-bottom: 50px;
 }
 
 .swiper-slide {
@@ -925,6 +926,9 @@ body.lock {
     justify-content: center;
     margin-top: 6.25rem;
   }
+  .h-partners__slider {
+    height: 300px;
+  }
   /*------------------------------------------*/
   .footer__body {
     grid-template-columns: repeat(4, 1fr);
@@ -935,12 +939,14 @@ body.lock {
     grid-template-columns: 1fr;
   }
   .payment__form-wrap {
-    background: #FFF !important;
     padding: 32px 15px;
+    display: flex;
+    justify-content: center;
   }
   .payment__form-wrap .payment__title {
     font-size: 20px;
     margin-bottom: 25px;
+    text-align: center;
   }
   .payment__form-wrap .input__group input {
     height: 48px;
@@ -985,9 +991,8 @@ body.lock {
   .main__phones span a {
     font-size: 0.875rem;
   }
-  .partners__logo {
-    flex-wrap: nowrap;
-    overflow-x: scroll;
+  .h-partners__slider {
+    height: 230px;
   }
   /*-----------------------------------*/
   .footer__body {
