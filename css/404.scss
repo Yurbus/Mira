@@ -47,20 +47,19 @@ body.lock {
 	overflow-x: hidden;
 }
 /*---------------------------*/
-[class*="__container"] {
-	max-width: 1728px;
+[class*=__container] {
+	max-width: 1500px;
 	margin: 0 auto;
-	padding: 0 10px;
+	padding: 0 .625rem;
 }
 
-@media screen and (max-width:1440px) {
-	[class*="__container"] {
-		max-width: 1170px;
+@media screen and (max-width: 90rem) {
+	[class*=__container] {
+		max-width: 1150px;
 		margin: 0 auto;
-		padding: 0 10px;
+		padding: 0 .625rem;
 	}
 }
-
 /*---------------------------*/
 .page {
 	flex: 1 1 auto;

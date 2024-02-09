@@ -68,14 +68,14 @@ body.lock {
 
 /*---------------------------*/
 [class*=__container] {
-  max-width: 108rem;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 0 0.625rem;
 }
 
 @media screen and (max-width: 90rem) {
   [class*=__container] {
-    max-width: 73.125rem;
+    max-width: 1150px;
     margin: 0 auto;
     padding: 0 0.625rem;
   }
